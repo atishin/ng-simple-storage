@@ -1,0 +1,25 @@
+{
+    "name": "ng-simple-storage",
+    "version": "0.0.0-beta.3",
+    "description": "Angular storage wrapper",
+    "main": "storage.bundle.js",
+    "module": "storage.module.js",
+    "types": "storage.module.d.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "angular",
+        "storage"
+    ],
+    "author": "Anton Tishin",
+    "license": "MIT",
+    "peerDependencies": {
+        "@angular/core": "*",
+        "@angular/platform-browser": "*",
+        "@angular/compiler": "*",
+        "core-js": "*",
+        "rxjs": "*",
+        "zone.js": "*"
+    }
+}
