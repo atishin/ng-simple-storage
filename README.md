@@ -1,27 +1,32 @@
-# NgSimpleStorage
+# ng-simpe-storage
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
+This library is a simple wrapper on a **localStorage**
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm install --save ng-simple-storage`
 
-## Code scaffolding
+## API reference for `ng-simple-storage`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`import { StorageService } from 'ng-simple-storage`
 
-## Build
+## Services
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### `StorageService`
 
-## Running unit tests
+#### Properties
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**`length:`** *`number`* - Currently storred items count
 
-## Running end-to-end tests
+**`item:`** *`{ key: value }`* -  Currently storred items
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+#### Methods
 
-## Further help
+__`clear(): `__*`void`* - clear storage
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+__`getItem<`__*`Type`*__`>(key: `__ *`string`*__`): `__*`Type`* - return item by key
+
+__`removeItem<`__*`Type`*__`>(key: `__ *`string`*__`): `__*`void`* - remove item by key
+
+__`setStorage(storage: `__ *`Storage`*__`): `__*`void`* - change storage used by the service
+
