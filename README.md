@@ -28,5 +28,11 @@ __`getItem<`__*`Type`*__`>(key: `__ *`string`*__`): `__*`Type`* - return item by
 
 __`removeItem<`__*`Type`*__`>(key: `__ *`string`*__`): `__*`void`* - remove item by key
 
+__`key(index: `__ *`number`*__`): `__*`string`* - return the key of item at the specified index
+
+__`setItem<`__*`Type`*__`>(key: `__ *`string`*__`, value: `__ *`Type`*__`): `__*`void`* - save item with a specified key
+
 __`setStorage(storage: `__ *`Storage`*__`): `__*`void`* - change storage used by the service
+
+## Aditional classes
 
