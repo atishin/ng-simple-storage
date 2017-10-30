@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-title>Storage form</mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+            <input type="text" placeholder="Key" matInput [formControl]="keyControl">
+        </mat-form-field>
+        <mat-form-field>
+            <input type="text" placeholder="Value" matInput [formControl]="valueControl">
+        </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+        <button color="primary" mat-button (click)="setItem()">Set Item</button>
+        <button color="primary" mat-button (click)="removeItem()">Remove Item</button>
+        <button color="primary" mat-button (click)="getItem()">Get Item</button>
+    </mat-card-actions>
+</mat-card>

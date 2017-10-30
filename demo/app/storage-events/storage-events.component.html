@@ -1,0 +1,18 @@
+<mat-card *ngFor="let event of events">
+    <mat-card-title>Item "{{ event.key }}" change event</mat-card-title>
+    <mat-card-content>
+        <div class="value">
+            New value:
+            <pre>
+                {{ event.newValue | json }}
+            </pre>
+        </div>
+
+        <div class="value">
+            Old value:
+            <pre>
+                {{ event.oldValue | json }}
+            </pre>
+        </div>
+    </mat-card-content>
+</mat-card>

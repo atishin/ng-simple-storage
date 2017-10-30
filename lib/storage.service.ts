@@ -16,7 +16,7 @@ export class StorageService {
 
     get items() {
         const items = {};
-        for (let i = 0; i < length; i ++) {
+        for (let i = 0; i < this.length; i ++) {
             const key = this.key(i);
             const item = this.getItem(key);
             items[key] = item;
@@ -63,7 +63,7 @@ export class StorageService {
 
     setItem<T>(key: string, data: T): void {
         const item = JSON.stringify(data);
-        const event = new StorageItemChangeEvent<T>({ key, oldValue: undefined, newValue: data });
+        const event = new StorageItemChangeEvent<T>({ key, oldValue: this.getItem<T>(key), newValue: data });
         this.storage.setItem(key, item);
         this.onItemChangeSubject.next(event);
     }

@@ -1,0 +1,14 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex: 1 0 auto;
+    flex-wrap: wrap;   
+    width: 90%;
+    max-width: 100%;
+}
