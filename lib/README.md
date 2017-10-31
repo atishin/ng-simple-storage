@@ -2,6 +2,8 @@
 
 This library is a simple wrapper on a **localStorage**
 
+[Demo](https://atishin.github.io/ng-simple-storage)
+
 ## Installation
 
 Run `npm install --save ng-simple-storage`
