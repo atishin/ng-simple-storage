@@ -1,6 +1,5 @@
 import { DEFAULT_STORAGE_PROVIDER } from './../../lib/storage.providers';
-import { StorageService as TestStorageService } from './../../lib/storage.service';
-import { StorageService, DEFAULT_STORAGE, DEFAULT_STORAGE_FACTORY } from 'ng-simple-storage';
+import { StorageService } from 'ng-simple-storage';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { StorageModule } from 'ng-simple-storage';
@@ -10,6 +9,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -37,17 +38,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         BrowserAnimationsModule,
         StorageModule,
         BrowserModule,
+        MatSnackBarModule,
+        MatSlideToggleModule,
         FormsModule,
         ReactiveFormsModule,
         AppRoutingModule
     ],
-    providers: [
-        DEFAULT_STORAGE_PROVIDER,
-        {
-            provide: StorageService,
-            useClass: TestStorageService
-        }
-    ],
+    providers: [],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -5,7 +5,7 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve --open",
-        "build": "ng build --prod",
+        "build": "ng build --prod -op gh-pages",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
@@ -27,7 +27,7 @@
         "@angular/router": "^4.2.4",
         "core-js": "^2.4.1",
         "lodash": "4.17.4",
-        "ng-simple-storage": "0.0.0-beta.6",
+        "ng-simple-storage": "^1.0.0",
         "rxjs": "^5.4.2",
         "zone.js": "^0.8.14"
     },

@@ -11,4 +11,19 @@
     flex-wrap: wrap;   
     width: 90%;
     max-width: 100%;
+    align-items: stretch;
+}
+
+ngss-d-storage-items, ngss-d-storage-form, ngss-d-storage-events  {
+    flex: 1 0 auto;
+    margin: 20px;
+    /deep/ {
+        mat-card {
+            height: 100%;
+        }
+    }
+}
+
+ngss-d-storage-form {
+    align-self: flex-start;
 }

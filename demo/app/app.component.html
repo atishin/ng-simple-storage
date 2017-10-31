@@ -5,9 +5,10 @@
 </mat-toolbar>
 
 <div class="content">
-    <ngss-d-storage-form></ngss-d-storage-form>
+    <ngss-d-storage-form [editItem]="editItem" (onStorageSwitched)="items.update()"></ngss-d-storage-form>
+    <ngss-d-storage-items (onEditItem)="editItem = $event" #items></ngss-d-storage-items>
     <ngss-d-storage-events></ngss-d-storage-events>
-    <ngss-d-storage-items></ngss-d-storage-items>
+    
 </div>
 
 

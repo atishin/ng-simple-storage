@@ -1,6 +1,9 @@
 <mat-card>
     <mat-card-title>Storage form</mat-card-title>
     <mat-card-content>
+        <mat-slide-toggle [formControl]="sessionStorageControl">
+                Use <b>sessionStorage</b>
+        </mat-slide-toggle>
         <mat-form-field>
             <input type="text" placeholder="Key" matInput [formControl]="keyControl">
         </mat-form-field>
@@ -12,5 +15,6 @@
         <button color="primary" mat-button (click)="setItem()">Set Item</button>
         <button color="primary" mat-button (click)="removeItem()">Remove Item</button>
         <button color="primary" mat-button (click)="getItem()">Get Item</button>
+        <button color="primary" mat-button (click)="clearStorage()">Clear storage</button>
     </mat-card-actions>
 </mat-card>

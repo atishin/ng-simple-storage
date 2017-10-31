@@ -1,3 +1,4 @@
+import { ItemMetadata } from './storage-items/storage-items.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     title = 'Angular Simple Storage';
+
+    editItem: ItemMetadata;
 }

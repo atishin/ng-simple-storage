@@ -1,18 +1,21 @@
-<mat-card *ngFor="let event of events">
-    <mat-card-title>Item "{{ event.key }}" change event</mat-card-title>
+<mat-card>
+    <mat-card-title>
+        Storage events
+    </mat-card-title>
     <mat-card-content>
-        <div class="value">
-            New value:
-            <pre>
-                {{ event.newValue | json }}
-            </pre>
-        </div>
+        <mat-list>
+            <mat-list-item *ngFor="let item of events">
+                <span matLine>
+                    Key: {{ item.key }}
+                </span>
+                <span matLine>
+                    Old Value: {{ item.oldValue | json }}
+                </span>
+                <span matLine>
+                    New Value: {{ item.newValue | json }}
+                </span>
+            </mat-list-item>
+        </mat-list>
 
-        <div class="value">
-            Old value:
-            <pre>
-                {{ event.oldValue | json }}
-            </pre>
-        </div>
     </mat-card-content>
 </mat-card>
