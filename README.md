@@ -18,7 +18,7 @@ Run `npm install --save ng-simple-storage`
 
 **`length:`** *`number`* - Currently storred items count
 
-**`item:`** *`{ key: value }`* -  Currently storred items
+**`items:`** *`{ key: value }`* -  Currently storred items
 
 **`onItemChange:`** *`Observable<StorageItemChangeEvent>`* - Observable which fires when item in storage changes
 
