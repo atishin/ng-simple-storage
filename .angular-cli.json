@@ -5,6 +5,7 @@
     },
     "apps": [
         {
+            "deployUrl": "/ng-simple-storage",
             "root": "demo",
             "outDir": "dist",
             "assets": [
