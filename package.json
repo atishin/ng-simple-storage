@@ -9,7 +9,7 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "build:lib": "ngc -p ./lib/tsconfig.json && copyfiles -u 1 ./lib/package.json dist",
+        "build:lib": "ngc -p ./lib/tsconfig.json && copyfiles -u 1 ./lib/package.json dist && copyfiles -u 1 ./lib/README.md dist",
         "publish": "npm run build:lib && npm publish ./dist"
     },
     "private": true,
